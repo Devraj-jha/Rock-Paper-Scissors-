@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="game">
+    <div class="game-hands">
+      <div class="player">
+        <div class="hearts">
+          <img src="Img/heartFull.png" alt="Heart" class="heart" />
+          <img src="Img/heartFull.png" alt="Heart" class="heart" />
+          <img src="Img/heartFull.png" alt="Heart" class="heart" />
+        </div>
+        <div class="hand-display">
+          <img src="img/normal.png" alt="Player Hand" id="player-hand" class="hand" />
+        </div>
+      </div>
+      <div class="computer">
+        <div class="hearts">
+          <img src="Img/heartFull.png" alt="Heart" class="heart" />
+          <img src="Img/heartFull.png" alt="Heart" class="heart" />
+          <img src="Img/heartFull.png" alt="Heart" class="heart" />
+        </div>
+        <div class="hand-display">
+          <img src="img/normal.png" alt="Computer Hand" id="computer-hand" class="hand" />
+        </div>
+      </div>
+    </div>
+
+    <div class="choices">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+    </div>
+
+    <div class="message">
+      <h2 id="result-text">Choose your move!</h2>
+    </div>
+
+    <div id="game-over" style="display: none;">
+      <h1>GAME OVER</h1>
+    </div>
+  </div>
+</body>
+</html>

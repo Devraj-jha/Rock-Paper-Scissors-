@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  background-color: #1e1e1e;
+  font-family: 'Courier New', monospace;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main game container */
+.game {
+  width: 60vw; /* 60% of viewport width */
+  max-width: 900px;
+  min-width: 320px;
+  background: #2c2c2c;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+/* Container holding player and computer hands + hearts side by side */
+.game-hands {
+  width: 100%;
+  display: flex;
+  gap: 80px; /* add small gap */
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+/* Player & computer stack hearts + hand vertically */
+.player,
+.computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+/* Hearts row inside player/computer */
+.hearts {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+/* Heart image size */
+.heart {
+  width: 30px;
+  height: 30px;
+}
+
+/* Hand image size and crisp pixel art */
+.hand-display .hand {
+  width: 120px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+/* Buttons container centered below hands */
+.choices {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Buttons style */
+.choices button {
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', monospace;
+}
+
+.choices button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Result message style */
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Game over message */
+#game-over {
+  font-size: 42px;
+  color: #ff3b3b;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  .game {
+    width: 90vw;
+  }
+
+  .game-hands {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .player,
+  .computer {
+    width: 100%;
+  }
+}
