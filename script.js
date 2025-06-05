@@ -37,12 +37,12 @@ function updateHearts(winner) {
   if (winner === "player") {
     computerLives--;
     if (computerLives >= 0) {
-      computerHearts[computerLives].src = "img/empty.png"; 
+      computerHearts[computerLives].src = "Img/empty.png"; 
     }
   } else if (winner === "computer") {
     playerLives--;
     if (playerLives >= 0) {
-      playerHearts[playerLives].src = "img/empty.png"; 
+      playerHearts[playerLives].src = "Img/empty.png"; 
     }
   }
 }
