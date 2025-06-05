@@ -97,8 +97,8 @@ function resetGame() {
   gameOverDiv.style.display = "none";
 
   // Reset hearts
-  playerHearts.forEach(heart => heart.src = "img/heartFull.png");
-  computerHearts.forEach(heart => heart.src = "img/heartFull.png");
+  playerHearts.forEach(heart => heart.src = "Img/heartFull.png");
+  computerHearts.forEach(heart => heart.src = "Img/heartFull.png");
 
   playerHand.src = handImages["normal"];
   computerHand.src = handImages["normal"];
