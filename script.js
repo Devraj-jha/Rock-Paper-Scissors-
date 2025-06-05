@@ -12,10 +12,10 @@ let computerLives = 3;
 const choices = ["rock", "paper", "scissors"];
 
 const handImages = {
-  rock: "img/rock.png",
-  paper: "img/paper.png",
-  scissors: "img/scissors.png",
-  normal: "img/normal.png"
+  rock: "Img/rock.png",
+  paper: "Img/paper.png",
+  scissors: "Img/scissors.png",
+  normal: "Img/normal.png"
 };
 
 function getComputerChoice() {
